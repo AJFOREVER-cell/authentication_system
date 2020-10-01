@@ -13,6 +13,7 @@
                 border: 2px solid #E95420;
 
             }
+
         </style>
     </head>
 
@@ -29,14 +30,20 @@
                 <% } %>
                 <form action="/register" method="POST">
                     <div class="form-group">
+                        <label for="username">Choose A Username</label>
+                        <input type="text" class="form-control" name="username" id="username" autocomplete="off"
+                            placeholder="Username" value="<%= typeof username != 'undefined' ? username : '' %>">
+                    </div>
+
+                    <div class="form-group">
                         <label for="email">Enter Your Email</label>
                         <input type="email" class="form-control" name="email" id="email" autocomplete="off"
                             placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>">
                     </div>
                     <div class="form-group">
-                        <label for="username">Choose A Username</label>
-                        <input type="text" class="form-control" name="username" id="username" autocomplete="off"
-                            placeholder="Username" value="<%= typeof username != 'undefined' ? username : '' %>">
+                        <label for="email">Enter Your Mobile Number</label>
+                        <input type="text" class="form-control" name="email" id="email" autocomplete="off"
+                            placeholder="Mobile Number" value="<%= typeof email != 'undefined' ? email : '' %>">
                     </div>
                     <div class="form-group">
                         <label for="password">Choose A Password</label>
