@@ -35,10 +35,10 @@ const checkAuthenticated = (req,res,next)=>{
     }
 }
 
-mongoose.connect(/*Your dataBase connection*/, {
-    useNewUrlParser: true, useUnifiedTopology: true
-}).then(() => console.log("Database Connected")
-);
+// mongoose.connect(/*Your dataBase connection*/, {
+//     useNewUrlParser: true, useUnifiedTopology: true
+// }).then(() => console.log("Database Connected")
+// );
 
 
 
